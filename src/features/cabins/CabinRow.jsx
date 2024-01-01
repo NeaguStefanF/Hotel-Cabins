@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { HiPencil, HiSquare2Stack, HiTrash } from 'react-icons/hi2';
+import {
+  HiPencil,
+  HiSquare2Stack,
+  HiTrash,
+} from 'react-icons/hi2';
 
 import CreateCabinForm from './CreateCabinForm';
 import { useDeleteCabin } from './useDeleteCabin';
@@ -89,16 +93,24 @@ function CabinRow({ cabin }) {
           <Menus.Menu>
             <Menus.Toggle id={cabinId} />
             <Menus.List id={cabinId}>
-              <Menus.Button icon={<HiSquare2Stack />} onClick={handleDuplicate}>
+              <Menus.Button
+                icon={<HiSquare2Stack />}
+                onClick={handleDuplicate}
+                disabled={isCreating}
+              >
                 Duplicate
               </Menus.Button>
 
               <Modal.Open opens="edit">
-                <Menus.Button icon={<HiPencil />}>Edit</Menus.Button>
+                <Menus.Button icon={<HiPencil />}>
+                  Edit
+                </Menus.Button>
               </Modal.Open>
 
               <Modal.Open opens="delete">
-                <Menus.Button icon={<HiTrash />}>Delete</Menus.Button>
+                <Menus.Button icon={<HiTrash />}>
+                  Delete
+                </Menus.Button>
               </Modal.Open>
             </Menus.List>
 
