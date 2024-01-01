@@ -1,7 +1,6 @@
 # Hotel Cabin Reservation
 
-The Wild Oasis Hotel Management Web Application
-Welcome to The Wild Oasis Hotel Management Web Application! This application is designed to streamline hotel management operations and provide an efficient platform for managing reservations, guests, rooms, and more.
+This application is designed to streamline hotel management operations and provide an efficient platform for managing reservations, guests, rooms, and more.
 
 ## Features
 
@@ -19,7 +18,7 @@ User Roles: Differentiate between staff, admin, and manager roles with appropria
 
 ## Technology Used
 
-The Wild Oasis Hotel Management Application is built using the following technologies and libraries:
+Hotel Cabin Management Application is built using the following technologies and libraries:
 
 React: JavaScript library for UI development.
 
